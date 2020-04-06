@@ -75,16 +75,15 @@ public class stepdefinition {
       
   }
   @And("I navigate to documentation link$")
-  public void navigate() throws InterruptedException   //navigate to documentation link
+  public void navigate()  //navigate to documentation link
   {
 	  
 	  
-	  Thread.sleep(5);
-	  String doc_x="//li[@class='menu-list-item menu-list-item--primary has-flyout binded']//a[@class='menu-link menu-link--primary']//span[@class='link-content'][contains(text(),'Documentation')]";
-	  //driver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS);
-	  //wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(doc_x)));
-	  WebElement document = driver.findElement(By.xpath("doc_x"));
 	  //Thread.sleep(5);
+	  String doc_x="//span[@data-title='Documentation']";
+	  driver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS);
+	  //wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(doc_x)));
+	  WebElement document = driver.findElement(By.xpath(doc_x));
 	  //wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(doc_x)));
 		 document.click();
 		
