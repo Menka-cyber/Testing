@@ -1,0 +1,12 @@
+ Online test 
+
+1. Run the stepdefinitionfile in chrome browser 
+2.Test case is witten in the feature file according to the requirements 
+3.In stepdefination file below methods I have  used to display the contents of the url:
+browser()- to configure the chrome browser 
+logged(String url)- it will call another function given() 
+given(String url)- its is used to dispaly the  documentation Url
+getResponseCode(String URL) - it used to display the status code as 200
+caa()- It display all the links present in the documentation 
+links()- It display all the links which has status code as 200
+4. I have the created the project using java lanuage in cucumber framework
